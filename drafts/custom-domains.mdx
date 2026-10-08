@@ -1,0 +1,42 @@
+---
+title: "Custom domains (draft)"
+description: "DRAFT: not live yet. Use your own domain for your love.rip page."
+icon: "globe"
+---
+
+<Warning>
+  DRAFT. This feature is not live yet and this page is not in the navigation. Don't publish until custom domains are turned on.
+</Warning>
+
+<Badge color="purple">Premium</Badge>
+
+Point a domain you own at your love.rip page.
+
+**Where to find it:** Account → **Domains**, or [love.rip/dashboard/account/domains](https://www.love.rip/dashboard/account/domains).
+
+<Frame caption="The Domains page">
+  <img src="/images/draft-domains-page.png" alt="Domains page listing connected domains and their status" />
+</Frame>
+
+## Add a domain
+
+<Steps>
+  <Step title="Add it">
+    Enter your domain on the Domains page. A `www` version is set up for you too.
+  </Step>
+  <Step title="Add the DNS records">
+    At your domain provider, add the three records shown: an **Ownership TXT**, a **Routing CNAME** and a **Certificate CNAME**.
+  </Step>
+  <Step title="Wait for it to go live">
+    The status moves from **Pending DNS** to **Pending SSL** to **Active**.
+  </Step>
+</Steps>
+
+<Frame caption="DNS records for a new domain">
+  <img src="/images/draft-domains-dns-records.png" alt="DNS records to add at your domain provider" />
+</Frame>
+
+## Limits and statuses
+
+- You can have up to 3 domains. The automatic `www` version and disabled domains don't count.
+- Statuses: **Active**, **Pending DNS**, **Pending SSL**, **Disabled** and **Error**.

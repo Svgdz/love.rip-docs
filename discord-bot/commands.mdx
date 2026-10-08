@@ -1,0 +1,124 @@
+---
+title: "Discord bot"
+description: "Commands and features of the love.rip bot in Discord."
+icon: "discord"
+---
+
+The love.rip bot lives in the love.rip Discord server ([discord.gg/loverip](https://discord.gg/loverip)). It shows your profile card, tracks levels, runs giveaways and events, and more.
+
+<Note>
+  Many bot features need your Discord linked to love.rip. Link it in [Account → Connections](https://www.love.rip/dashboard/account?tab=connections).
+</Note>
+
+## Commands
+
+| Command | What it does |
+| --- | --- |
+| `/me` | Shows your love.rip profile card |
+| `,me` | Same as `/me`, as a message |
+| `/level rank` | Shows a rank card. Add `user` to check someone else |
+| `/level leaderboard` | Top 10 members in the server by XP |
+| `/level card customize` | Opens the rank card editor |
+| `/giveaway redeem` | Posts a giveaway using a code you bought on love.rip |
+| `/ticket open` | Reopens your ticket so you can send messages again |
+| `/ticket transcript` | Saves a text transcript of your ticket |
+| `/ticket delete` | Deletes your ticket channel |
+
+## Your profile card: `/me`
+
+Shows your love.rip card in chat: your username (linked to your page), badges, Discord mention, when you created your account, your UID, and your views, likes, dislikes, comments, badges and aliases. Most stats also show your rank, like `#12`.
+
+<Note>You need a linked Discord account and a love.rip username to use it.</Note>
+
+<Frame caption="The /me profile card in Discord">
+  <img src="/images/bot-me-card.png" alt="The love.rip bot showing a /me profile card in Discord" />
+</Frame>
+
+## Levels: `/level`
+
+Chat in the server to earn XP and level up. Some levels may give you a reward role.
+
+- `/level rank [user]` shows a rank card.
+- `/level leaderboard` shows the top 10 by XP.
+- `/level card customize` lets you change how your rank card looks.
+
+<Frame caption="A rank card">
+  <img src="/images/bot-rank-card.png" alt="A level rank card from the love.rip bot" />
+</Frame>
+
+## Giveaways
+
+### Enter a giveaway
+
+Press the enter button on a giveaway post. You'll get a private reply when you're in.
+
+- Prizes can be Premium, Verified, Custom Badge, Alias Tokens or Nitro.
+- For love.rip prizes, your Discord must be linked to love.rip. Nitro giveaways don't need this.
+- Some giveaways need a minimum level, or a number of messages sent while the giveaway runs.
+- Some giveaways give a chosen role 2× luck.
+- When you win a love.rip prize, it's added to your account automatically. For Nitro, the host sends it to you.
+
+<Frame caption="A giveaway post">
+  <img src="/images/bot-giveaway.png" alt="A love.rip giveaway post with an enter button" />
+</Frame>
+
+### Host your own giveaway: `/giveaway redeem`
+
+<Steps>
+  <Step title="Buy the prize">
+    On the love.rip store, pick a product and choose **Giveaway**. Set the quantity to the number of winners. See [Store, gifts and giveaways](/premium/store).
+  </Step>
+  <Step title="Get your code">
+    After you pay, your giveaway code arrives by email.
+  </Step>
+  <Step title="Post it">
+    Run `/giveaway redeem` with your `code` and a `duration` (1 hour, 3 hours, 5 hours, 12 hours, 1 day, 2 days or 3 days). You can also set a minimum `level`, a `boosted-role` with 2× luck, and a number of `messages` people must send to enter.
+  </Step>
+</Steps>
+
+<Note>The server needs a giveaway channel set up first. Each code can only host one giveaway.</Note>
+
+## Events
+
+During a profile event, post in the event channel with your love.rip profile link, a message and a screenshot of your profile. The bot files your entry for review. You get one entry per event. Event winners and participants can earn [event badges](/badges-and-perks/badges).
+
+<Frame caption="An event card">
+  <img src="/images/bot-event.png" alt="A love.rip profile event card in Discord" />
+</Frame>
+
+## Tickets
+
+Open a private support ticket from a ticket panel in the server. Inside your own ticket you can use:
+
+- `/ticket open` to reopen it so you can send messages again.
+- `/ticket transcript` to save a text transcript.
+- `/ticket delete` to delete the ticket channel.
+
+<Note>Tickets on Discord and on the website count together toward your open ticket limit. See [Support tickets](/account/support).</Note>
+
+## Voice rooms
+
+Join the **Join to Create** voice channel and the bot makes you your own room. Control it from the **VoiceMaster Interface** panel:
+
+| Button | Does |
+| --- | --- |
+| 🔒 | Lock or unlock your room |
+| 🙈 | Hide or unhide your room |
+| ✏️ | Rename your room |
+| 👑 | Claim ownership |
+| 👥 | Manage permitted, blocked and DJ users |
+| ℹ️ | View room info |
+| ↕️ | Set the user limit |
+| 🔁 | Transfer ownership |
+| 📄 | Manage presets |
+| ⚙️ | Advanced settings |
+
+<Frame caption="The VoiceMaster Interface panel">
+  <img src="/images/bot-voice-panel.png" alt="VoiceMaster Interface panel with room control buttons" />
+</Frame>
+
+## Other things the bot does
+
+- **Profile posts:** in the bio channel, posts with love.rip profile links get like and dislike reactions.
+- **Badge roles:** some love.rip badges give you a matching role in the server.
+- **Join codes:** when you join, you may be asked to enter a code in a check channel before you get access.
