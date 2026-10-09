@@ -12,11 +12,14 @@
     "default": "dark"
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg",
+    "light": "/images/love-rip-logo-light.png",
+    "dark": "/images/love-rip-logo-white.png",
     "href": "https://www.love.rip"
   },
-  "favicon": "/favicon.svg",
+  "favicon": {
+    "light": "/images/devil-heart-500.png",
+    "dark": "/images/devil-heart-500.png"
+  },
   "navbar": {
     "links": [
       {
@@ -76,10 +79,9 @@
         "pages": [
           "grow/sharing",
           "grow/leaderboard",
-          "grow/invites",
           "grow/templates",
-          "grow/affiliate",
-          "grow/page-payments"
+          "grow/invites",
+          "grow/affiliate"
         ]
       },
       {
@@ -98,8 +100,9 @@
         ]
       },
       {
-        "group": "Discord bot",
+        "group": "Discord",
         "pages": [
+          "discord-bot/rules",
           "discord-bot/commands"
         ]
       },
